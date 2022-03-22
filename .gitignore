@@ -1,7 +1,16 @@
+bin/
+include/
+lib/
+
+.DS_Store
+db/key.json
+notes.md
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
+*.sqlite3
 
 # C extensions
 *.so
