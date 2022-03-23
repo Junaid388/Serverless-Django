@@ -6,8 +6,8 @@ from .base import *
 
 from .installed import *
 
-
-HOME_PAGE_MSG = "Hello World this is local proxy"
+ALLOWED_HOSTS = ['*']
+HOME_PAGE_MSG = "Hello World, This is local proxy"
 
 print("Using local proxy")
 # Database
