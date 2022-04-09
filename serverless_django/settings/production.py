@@ -18,8 +18,12 @@ HOME_PAGE_MSG = "Hello World, This is production"
 # Database
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db_prod.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('PRODUCTION_DATABASE_NAME'),
+        'USER': os.environ.get('PRODUCTION_DATABASE_USER'),
+        'PASSWORD':os.environ.get('PRODUCTION_DATABASE_PWD'),
+        'HOST':os.environ.get('PRODUCTION_DATABASE_HOST'),
+        'PORT':5432
     }
 }
 
