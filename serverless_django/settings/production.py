@@ -10,7 +10,7 @@ ALLOWED_HOSTS = ['*']
 DEBUG = False
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("SECRET_KEY", 'django-insecure-i*2yg*in*#v9c=xlpaz+uc45&=^@eu%d=mwku)136#@9kparj7')
+SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 
 print("Using production")
 
